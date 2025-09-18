@@ -1,0 +1,8 @@
+{
+  "expo": {
+    "name": "Patient Suite",
+    "slug": "patient-suite",
+    "version": "1.0.0",
+    "sdkVersion": "48.0.0"
+  }
+}
