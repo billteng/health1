@@ -1,0 +1,67 @@
+:root{
+  --bg:#f7f8fb;
+  --panel:#ffffff;
+  --accent:#2563eb;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%;}
+body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:var(--bg);margin:0}
+.app{display:flex;min-height:100vh}
+.sidebar{width:220px;background:var(--panel);padding:20px;border-right:1px solid #e6e9ef}
+.content{flex:1;padding:24px}
+.logo{font-weight:700;margin-bottom:16px}
+.menu{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.menu-item{display:flex;align-items:center;gap:12px;padding:10px;border-radius:8px;color:var(--muted);background:transparent;border:none;width:100%;text-align:left;cursor:pointer;transition:all .12s ease}
+.menu-item .menu-icon{width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center}
+.menu-item .badge{margin-left:auto;background:#e6f0ff;color:var(--accent);padding:2px 6px;border-radius:999px;font-size:12px}
+.menu-item:hover{background:#f1f6ff;color:var(--accent);transform:translateY(-1px)}
+.menu-item.active{background:#e8f1ff;color:var(--accent);font-weight:700}
+.menu-item:focus{outline:2px solid rgba(37,99,235,0.12);box-shadow:0 0 0 4px rgba(37,99,235,0.06)}
+.patient-form, .panel{background:var(--panel);padding:16px;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,0.03)}
+.row{display:flex;gap:8px;align-items:center;margin-bottom:8px}
+.row label{width:80px;color:var(--muted);font-size:13px}
+input,select,textarea{flex:1;padding:8px;border:1px solid #e6e9ef;border-radius:6px}
+.patient-table{width:100%;border-collapse:collapse;margin-top:16px}
+.patient-table th,.patient-table td{padding:8px;text-align:left;border-bottom:1px solid #eef2f7}
+.patient-table tr:hover{background:#f7fbff}
+.patient-table tr[style*="cursor: pointer"] td{background:#fbfdff}
+.controls{display:flex;gap:8px;align-items:center;margin-bottom:12px}
+.search{flex:1}
+.muted{color:var(--muted);font-size:13px}
+.btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:6px;border:none;cursor:pointer}
+.btn.secondary{background:#e6eefc;color:var(--accent)}
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.25)}
+.modal .panel{width:640px}/* Basic global styles for Patient Dashboard */
+:root{
+  --bg:#f7fafc;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2563eb;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+}
+.container{
+  max-width:980px;
+  margin:28px auto;
+  padding:20px;
+}
+h1{margin:0 0 16px 0;font-size:1.6rem}
+.patient-form, .patient-table{background:var(--card);border-radius:8px;padding:16px;margin-bottom:18px;box-shadow:0 1px 2px rgba(16,24,40,0.05)}
+.patient-form .row{display:flex;gap:12px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
+.patient-form label{min-width:64px;color:var(--muted);font-size:0.85rem}
+.patient-form input[type="text"], .patient-form input[type="date"], .patient-form textarea, .patient-form select{flex:1;padding:8px;border:1px solid #e5e7eb;border-radius:6px}
+.patient-form textarea{min-height:64px}
+.patient-form button{background:var(--accent);color:white;border:none;padding:10px 14px;border-radius:6px;cursor:pointer}
+.patient-table table{width:100%;border-collapse:collapse}
+.patient-table th, .patient-table td{padding:10px;text-align:left;border-bottom:1px solid #eef2f7}
+.patient-table th{font-weight:600;color:var(--muted);font-size:0.85rem}
+.muted{color:var(--muted);font-size:0.9rem}
+.status-pill{display:inline-block;padding:4px 8px;border-radius:999px;background:#eef2ff;color:#1e40af;font-size:0.8rem}
