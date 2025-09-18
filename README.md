@@ -16,6 +16,10 @@ cd health1
 docker compose up -d
 ```
 
+##### Fig 1
+
+<img src="./screenshots/podman.png" width="200" height="160" alt="Docker Podman screenshot" />
+
 2. Backend:
 
 - Copy `.env.example` to `.env` in `health1/backend` and adjust if needed.
@@ -28,6 +32,10 @@ npm run dev
 
 - Test Url: http://localhost:4000/api/patients
 
+#### Fig 2
+
+<img src="./screenshots/api.png" width="200" height="160" alt="Docker Podman screenshot" />
+
 3. Frontend:
 
 - From `health1/frontend` run:
@@ -38,6 +46,18 @@ npm run dev
 ```
 
 - Test Url: http://localhost:5173/
+
+#### Fig 3
+
+<img src="./screenshots/main.png" width="200" height="160" alt="Docker Podman screenshot" />
+
+#### Fig 4
+
+<img src="./screenshots/new.png" width="200" height="160" alt="Docker Podman screenshot" />
+
+#### Fig 5
+
+<img src="./screenshots/edit.png" width="200" height="160" alt="Docker Podman screenshot" />
 
 4. Mobile (optional):
 
